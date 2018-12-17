@@ -3,7 +3,7 @@ language: generic
 services: 
   - docker
 
-berfore_install: 
+before_install: 
   - docker build -t smucciarchitech/react-app -f Dockerfile.dev . 
 
 script: 
