@@ -3,7 +3,7 @@ services:
   - docker
 
 berfore_install: 
-  - docker build -t new-image -f Dockerfile.dev . 
+  - docker build -t smucciArchitech/react-app -f Dockerfile.dev . 
 
 script: 
-  - docker run new-image npm run test -- --coverage 
+  - docker run smucciArchitech/react-app npm run test -- --coverage 
